@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "E:/Studia/sem5/metody_numeryczne/listy/lista2"
+    ],
+    "python.analysis.extraPaths": [
+        "E:/Studia/sem5/metody_numeryczne/listy/lista2"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none"
+}
