@@ -20,8 +20,11 @@ def correction(A: np.ndarray, b:np.ndarray, eps: float, max_iter=1000):
 
 
 if __name__ == "__main__":
-    hilbert = np.array([[1 / (i + j - 1) for i in range(1, 6)] for j in range(1, 6)])
-    b = np.array(range(5, 0, -1))
+    hilbert = np.array(
+        [[1 / (i + j - 1) for i in range(1, 6)] for j in range(1, 6)], 
+        dtype=np.float32
+    )
+    b = np.array(range(5, 0, -1), dtype=np.float32)
 
     # Rozwiązanie metodą iteracyjnego poprawiania rozwiązań
     solution, count = correction(hilbert, b, 5e-14)
