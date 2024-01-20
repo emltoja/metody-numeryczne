@@ -6,10 +6,10 @@ from numpy import linalg as la
 # Poprzestawiaj wiersze tak, aby na głównej diagonali nie było zer
 def validate(A: np.ndarray, b: np.ndarray):
     n = b.shape[0]
-    for i in range(0, n - 1):
+    for i in range(0, n):
         if A[i, i] != 0:
             continue
-        for j in range(i + 1, n):
+        for j in range(0, n):
             if A[j, i] != 0:  # Zamień rzędy
                 A[i, :] += A[j, :]
                 A[j, :] = A[i, :] - A[j, :]
