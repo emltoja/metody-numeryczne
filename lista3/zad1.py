@@ -27,7 +27,7 @@ if __name__ == "__main__":
     b = np.array(range(5, 0, -1), dtype=np.float32)
 
     # Rozwiązanie metodą iteracyjnego poprawiania rozwiązań
-    solution, count = correction(hilbert, b, 5e-14)
+    solution, count = correction(hilbert, b, 1e-1)
     print(f"Ilość iteracji: {count}")
     print(f"Rozwiązanie: {solution}")
     print(f"Ax = {np.dot(hilbert, solution)}")

@@ -32,13 +32,6 @@ def calc_norms(n):
 def plot_ratios(n):
 
     ratios = calc_norms(n)
-    # plt.plot(range(n), ratios)
-    # plt.xlabel("Iteracja")
-    # plt.ylabel("Norma")
-    # plt.grid()
-    # plt.title("Norma wektora x w funkcji iteracji")
-    # plt.show()
-
     # Mark the lowest and highest values and give them labels
 
     plt.annotate(f"max: {np.max(ratios).__round__(3)}", xy=(np.argmax(ratios), np.max(ratios)), xytext=(np.argmax(ratios) + 1, np.max(ratios) + 0.1))

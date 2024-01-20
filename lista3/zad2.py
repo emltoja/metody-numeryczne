@@ -49,7 +49,7 @@ def gauss_seidel(A: np.ndarray, b: np.ndarray, initial_guess: np.ndarray, eps: f
 if __name__ == "__main__":
 
     dim = 20
-
+     
     a = toeplitz(dim)
     b = np.array([0 for _ in range(dim - 1)] + [100])
 
